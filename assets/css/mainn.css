@@ -2185,7 +2185,7 @@ img[height] {
 
 .c-avatar__img {
   border-radius: 50%;
-  width: 20rem;
+/*   width: 20rem; */
   height: 20rem;
 }
 
