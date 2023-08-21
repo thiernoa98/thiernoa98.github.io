@@ -1,6 +1,40 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
+.preloader {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 0.75s visibility 0.75s;
+
+}
+.preloader-hidden{
+	opacity: 0;
+	visibility: hidden;
+}
+.preloader::after{
+	content: '';
+	width: 75px;
+	height: 75px;
+	border: 15px solid #FFA500;
+	border-top-color: #18bfef;
+	border-radius: 50%;
+	animation: loading 0.75s ease infinite;
+}
+@keyframes loading {
+	from{
+		transform: rotate(0turn);
+	}
+	to{
+		transform: rotate(1turn);
+	}
+}
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
