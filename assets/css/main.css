@@ -24,14 +24,14 @@
 	border: 15px solid #FFA500;
 	border-top-color: #18bfef;
 	border-radius: 50%;
-	animation: loading 0.75s ease infinite;
+	animation: loading 0.5s ease infinite;
 }
 @keyframes loading {
-	from{
+/* 	from{
 		transform: rotate(0turn);
-	}
+	} */
 	to{
-		transform: rotate(1turn);
+		transform: rotate(360deg);
 	}
 }
 
